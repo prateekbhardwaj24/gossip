@@ -1,0 +1,237 @@
+body{
+        background: #f2f7fb;
+}
+
+.header_image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+
+}
+
+.header_image img:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 0.7), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    transform: translateY(2px);
+
+}
+
+/*
+.nav-item {
+    font-size: 20px;
+    font-family: serif;
+    position: relative;
+}
+*/
+
+.onclick:hover {
+    background: #888;
+}
+
+.onclick:visited {
+    background: white;
+}
+
+#notifications {
+    display: none;
+    width: 380px;
+    position: absolute;
+    top: 55px;
+    border-radius: 8px;
+    /*	background-color: #f2f7fb;*/
+    right: 2px;
+    background: #FFF;
+    border: solid 1px rgba(100, 100, 100, .20);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .20);
+    z-index: 1;
+}
+
+#notifications:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+
+    border: 10px solid #CCC;
+    border-color: transparent transparent #FFF;
+    margin-top: -20px;
+    margin-left: 335px;
+}
+
+h3 {
+    border-radius: 8px;
+    display: block;
+    color: #000;
+    font-weight: bolder;
+    font-family: serif;
+    background: #FFF;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px;
+    letter-spacing: 1px;
+    margin: 0;
+    border-bottom: solid 1px rgba(100, 100, 100, .30);
+}
+
+
+/*
+.nav-item input {
+    border-radius: 2.5rem;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+    background: #f2f7fb;
+}
+
+.nav-item input:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 0.7), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    transform: translateY(2px);
+}
+*/
+
+/*
+.nav-item input:focus {
+    border: 1px solid #f2f7fb;
+}
+*/
+
+.navbar {
+    background: #f2f7fb;
+    color: #555;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+    border-radius: 20px;
+    height: 60px;
+    position: relative;
+
+    /*    position: fixed;*/
+    /*
+    overflow: hidden;
+     top: 0;  Position the navbar at the top of the page 
+  width: 100%; 
+*/
+}
+
+/*
+.navbar-collapse {
+    text-align: end;
+    margin-top: 50px;
+    margin-right: 10px;
+    position: absolute;
+}
+*/
+
+.navbar-nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    	align-items: center;
+    	justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: transform 0.5s;
+    background: #f2f7fb;
+    cursor: pointer;
+
+
+}
+
+.nav-link i {
+    font-size: 20px;
+    color: #777;
+    transition: 0.5s;
+}
+
+.nav-link:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 0.7), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    transform: translateY(2px);
+}
+
+.nav-link:hover i {
+    transform: scale(0.90);
+}
+
+.nav-link:hover .fa-user {
+    color: red;
+}
+
+.nav-link:hover .fa-bell-o {
+    color: blue;
+}
+
+.nav-link:hover .fa-pagelines {
+    color: #4fce5d;
+}
+
+.nav-link:hover .fa-sign-out {
+    color: darkred;
+}
+
+.nav-link:hover .fa-bolt {
+    color: #00acee;
+}
+
+span.noti_badge {
+    position: absolute;
+/*
+    top: -2px;
+    right: 4px;
+*/
+    margin-left: -15px;
+    margin-top: -35px;
+    padding: 0px 5px;
+    border-radius: 50%;
+    background: #00acee;
+    color: white;
+    font-size: 12px;
+}
+
+.noti_data {
+    background-color: #f2f7fb;
+    color: #666;
+    border-radius: 8px;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -6px -6px 10px -1px rgba(0, 0, 0, 0.2), -0.5px -0.5px 0px rgba(0, 0, 0, 0.2), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    transform: translateY(2px);
+    margin: 8px;
+}
+
+.noti_data:hover {
+    /*
+    background: none;
+    background-color: none;
+*/
+    background-color: rgba(275, 275, 275, 0.8);
+    color: black;
+    /*    border: none;*/
+}
+
+
+
+/* Center the loader */
+
+
+
+
+
